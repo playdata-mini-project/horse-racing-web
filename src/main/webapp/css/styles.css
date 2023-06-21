@@ -4,6 +4,7 @@
     margin: 20px auto;
     font-size: 24px;
     margin: 0 25px;
+    min-width: 150px;
 }
 .button-container {
     text-align: center;
@@ -15,6 +16,7 @@
     margin: 20px auto;
     font-size: 24px;
     margin: 0 25px;
+    min-width: 150px;
 }
 .button-container .button3 {
     background-color: #008CBA; /* Green */
@@ -22,6 +24,7 @@
     margin: 20px auto;
     font-size: 24px;
     margin: 0 25px;
+    min-width: 150px;
 }
 .button-container .button4 {
     background-color: #e7e7e7; /* Green */
@@ -29,4 +32,8 @@
     margin: 20px auto;
     font-size: 24px;
     margin: 0 25px;
+    min-width: 150px;
+}
+.button-container .button {
+    min-width: 150px;
 }
