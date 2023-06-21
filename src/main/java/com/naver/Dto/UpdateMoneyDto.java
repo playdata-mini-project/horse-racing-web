@@ -4,9 +4,9 @@ public class UpdateMoneyDto {
     private int money;
     private String name;
 
-    public UpdateMoneyDto(int money, String name) {
-        this.money = money;
+    public UpdateMoneyDto(String name, int money) {
         this.name = name;
+        this.money = money;
     }
 
     public int getMoney() {

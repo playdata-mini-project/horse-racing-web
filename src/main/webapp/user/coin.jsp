@@ -50,7 +50,7 @@
 </head>
 <body>
 
-<form class="coin-form" method="post" action="updateMoney.jsp">
+<form class="coin-form" method="post" action="/updateMoney">
   <h2>코인 충전</h2>
   <label for="name">이름:</label>
   <input type="text" id="name" name="name" required><br>

@@ -22,7 +22,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>UserinfoServlet</servlet-name>
-    <url-pattern>/userinfo</url-pattern>
+    <url-pattern>/userInfo</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>HorseInsertServlet</servlet-name>
@@ -31,7 +31,13 @@
   <servlet-mapping>
     <servlet-name>HorseInsertServlet</servlet-name>
     <url-pattern>/horseInsert</url-pattern>
-  </servlet-mapping>//
-
-
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateMoneyServlet</servlet-name>
+    <servlet-class>com.naver.servlet.UpdateMoneyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateMoneyServlet</servlet-name>
+    <url-pattern>/updateMoney</url-pattern>
+  </servlet-mapping>
 </web-app>
