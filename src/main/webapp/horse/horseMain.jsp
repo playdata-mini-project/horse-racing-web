@@ -53,11 +53,11 @@
 </head>
 <body>
 <img src="/img/rudak.png">
-<div class="button-container">
-  <h2>경주마 관리</h2>
-  <button type="button" class="button" onClick="location.href='/horse/horseInsert.jsp'">경주마 등록</button>
-  <button type="button" class="button" onClick="location.href='/horse/horseInfo.jsp'">경주마 조회</button>
-  <button type="button" class="button" onClick="location.href='/'">Home</button>
+
+<div class = "button-container">
+  <button type="button" class="button1" onClick="location.href='/horse/horseInsert.jsp'">경주마 등록</button>
+  <button type="button" class="button2" onClick="location.href='/horse/horseInfo.jsp'">경주마 조회</button>
+  <a href="/" class="button">Home</a>
 </div>
 </body>
 </html>

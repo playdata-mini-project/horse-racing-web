@@ -14,20 +14,28 @@ import java.util.List;
 public class UserDao {
     public static UserDto me;
 
-    public void insert(UserDto user) {
+    public boolean insert(UserDto user) {
         System.out.println("insert");
-        Connection conn = new JdbcConnection().getJdbc();
-        String sql = "insert into users(name, password, nickname, money) " +
-                "values(?, ?, ? , ?)";
         System.out.println("insert2");
         try {
+            Connection conn = new JdbcConnection().getJdbc();
+            String sql = "insert into users(name, password, nickname, money) " +
+                    "values(?, ?, ? , ?)";
             PreparedStatement pst = conn.prepareStatement(sql);
             pst.setString(1, user.getName());
             pst.setString(2, user.getPassword());
             pst.setString(3, user.getNickname());
             pst.setInt(4, user.getMoney());
-            pst.executeUpdate();
+            try {
+                int rowsAffected = pst.executeUpdate();
+                System.out.println(rowsAffected);
+                return rowsAffected == 1;
+            } catch (SQLIntegrityConstraintViolationException ex) {
+
+                return false;
+            }
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }
