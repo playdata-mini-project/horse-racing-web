@@ -10,7 +10,7 @@
 <div class = "button-container">
     <button type="button" class="button1" onClick="location.href='/user/join.jsp'">유저등록</button>
     <button type="button" class="button2" onClick="location.href='/user/userInfo.jsp'">유저정보확인</button>
-    <button type="button" class="button3" onClick="location.href='/user/coin.jsp'">코인충전</button>
+    <button type="button" class="button3" onClick="location.href='/horse/horseMain.jsp'">경주마</button>
     <button type="button" class="button4" onClick="location.href='/user/gameStart.jsp'">게임시작</button>
 </div>
 </body>
