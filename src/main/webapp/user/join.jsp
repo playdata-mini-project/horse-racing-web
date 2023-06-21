@@ -63,6 +63,15 @@
         <input type="text" name="nickname" placeholder="닉네임" required>
         <input type="submit" value="등록하기">
     </form>
+    <% if (request.getAttribute("message") != null) { %>
+    <div class="error-message">
+        <%= request.getAttribute("message") %>
+    </div>
+    <% } else if (request.getAttribute("registered") != null) { %>
+    <div class="success-message">
+        등록이 완료되었습니다.
+    </div>
+    <% } %>
 </div>
 </body>
 </html>

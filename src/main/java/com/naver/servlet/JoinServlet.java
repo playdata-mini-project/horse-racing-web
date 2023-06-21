@@ -26,6 +26,6 @@ req.getRequestDispatcher("/user/join.jsp").forward(req,resp);
         userDao.insert(userDto);
 
         // 회원가입 후 유저 전체 리스트로 이동
-        resp.sendRedirect("/user/userInfo.jsp");
+        resp.sendRedirect("/user/user.jsp");
     }
 }
