@@ -13,6 +13,7 @@ import java.util.List;
 
 public class UserDao {
     public static UserDto me;
+
     public void insert(UserDto user) {
         System.out.println("insert");
         Connection conn = new JdbcConnection().getJdbc();
@@ -32,7 +33,7 @@ public class UserDao {
     }
 
 
-//    public boolean login(String name, String password) {
+    //    public boolean login(String name, String password) {
 //        List<UserDto> users = new ArrayList<UserDto>();
 //        Connection conn = new JdbcConnection().getJdbc();
 //        String sql = "select id, name, nickname, created_at " +
@@ -58,60 +59,56 @@ public class UserDao {
 //    }
 //
     private UserDto makeUser(ResultSet resultSet) {
-            Integer id,money;
-            String password, username, name, createdAt;
-            try {
-                id = resultSet.getInt("id");
-            } catch (SQLException e) {
-                id = null;
-            }
-            try {
-                password = resultSet.getString("password");
-            } catch (SQLException e) {
-                password = null;
-            }
-            try {
-                username = resultSet.getString("name");
-            } catch (SQLException e) {
-                username = null;
-            }
-            try {
-                name = resultSet.getString("nickname");
-            } catch (SQLException e) {
-                name = null;
-            }try {
+        Integer id, money;
+        String password, username, name, createdAt;
+        try {
+            id = resultSet.getInt("id");
+        } catch (SQLException e) {
+            id = null;
+        }
+        try {
+            password = resultSet.getString("password");
+        } catch (SQLException e) {
+            password = null;
+        }
+        try {
+            username = resultSet.getString("name");
+        } catch (SQLException e) {
+            username = null;
+        }
+        try {
+            name = resultSet.getString("nickname");
+        } catch (SQLException e) {
+            name = null;
+        }
+        try {
             money = resultSet.getInt("money");
         } catch (SQLException e) {
             money = null;
         }
-            try {
-                createdAt = resultSet.getString("created_at");
-            } catch (SQLException e) {
-                createdAt = null;
-            }
-            return new UserDto(id, username, password, name,money, createdAt);
-        }
-
-
-    public void updateMoney(UpdateMoneyDto dto) {
-        Connection conn = new JdbcConnection().getJdbc();
-
         try {
-            String updateQuery = "UPDATE users SET money = money + ? WHERE name = ?";;
+            createdAt = resultSet.getString("created_at");
+        } catch (SQLException e) {
+            createdAt = null;
+        }
+        return new UserDto(id, username, password, name, money, createdAt);
+    }
+
+
+    public boolean updateMoney(UpdateMoneyDto dto) {
+        try {
+            Connection conn = new JdbcConnection().getJdbc();
+            String updateQuery = "UPDATE users SET money = money + ? WHERE name = ?";
             PreparedStatement statement = conn.prepareStatement(updateQuery);
-            statement.setInt(1,dto.getMoney());
-            statement.setString(2,dto.getName());
+            statement.setInt(1, dto.getMoney());
+            statement.setString(2, dto.getName());
 
             int rowsAffected = statement.executeUpdate();
-
+            System.out.println(rowsAffected);
+            return rowsAffected == 1;
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
+            throw new RuntimeException(e);
         }
     }
 }
