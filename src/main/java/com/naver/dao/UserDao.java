@@ -15,8 +15,6 @@ public class UserDao {
     public static UserDto me;
 
     public boolean insert(UserDto user) {
-        System.out.println("insert");
-        System.out.println("insert2");
         try {
             Connection conn = new JdbcConnection().getJdbc();
             String sql = "insert into users(name, password, nickname, money) " +
