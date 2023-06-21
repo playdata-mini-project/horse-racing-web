@@ -1,15 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: jmg13
-  Date: 2023-06-21
-  Time: 오후 2:55
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>경주마 등록</title>
     <style>
+        body {
+            background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
+        }
         .signup-form {
             width: 400px;
             margin: 0 auto;
@@ -36,7 +33,7 @@
         .signup-form input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #4caf50;
+            background-color: red;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -44,7 +41,7 @@
         }
 
         .signup-form input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: red;
         }
 
         .signup-form .error-message {

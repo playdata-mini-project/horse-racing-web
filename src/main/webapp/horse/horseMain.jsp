@@ -2,6 +2,11 @@
 <head>
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+    body {
+      background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
+    }
+  </style>
 </head>
 <body>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
