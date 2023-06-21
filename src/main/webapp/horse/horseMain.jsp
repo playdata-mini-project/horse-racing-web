@@ -15,7 +15,7 @@
 <div class = "button-container">
   <button type="button" class="button1" onClick="location.href='/horse/horseInsert.jsp'">경주마 등록</button>
   <button type="button" class="button2" onClick="location.href='/horse/horseInfo.jsp'">경주마 조회</button>
-<%--   <button type="button" class="button3" onClick="location.href='/horse/horseInfo.jsp'">뒤로가기</button>--%>
+  <a href="/" class="button">Home</a>
 </div>
 </body>
 </html>
