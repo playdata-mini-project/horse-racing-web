@@ -21,5 +21,5 @@
   </dependencies>
   <build>
     <finalName>userr</finalName>
-  </build>
+  </build>\
 </project>

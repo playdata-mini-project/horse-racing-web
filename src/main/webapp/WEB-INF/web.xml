@@ -24,5 +24,14 @@
     <servlet-name>UserinfoServlet</servlet-name>
     <url-pattern>/userinfo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>HorseInsertServlet</servlet-name>
+    <servlet-class>com.naver.servlet.HorseInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HorseInsertServlet</servlet-name>
+    <url-pattern>/horseInsert</url-pattern>
+  </servlet-mapping>//
+
 
 </web-app>
