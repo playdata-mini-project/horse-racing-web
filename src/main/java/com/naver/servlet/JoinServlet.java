@@ -22,7 +22,7 @@ req.getRequestDispatcher("/user/join.jsp").forward(req,resp);
         String password = req.getParameter("password");
         String nickname = req.getParameter("nickname");
         new UserDao().insert(new UserDto(null,name,password,nickname,0,null));
-        resp.sendRedirect("/login");
+        resp.sendRedirect("/userinfo");
 
     }
 }

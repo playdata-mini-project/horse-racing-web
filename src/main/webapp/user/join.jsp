@@ -57,7 +57,7 @@
 <body>
 <div class="signup-form">
     <h2>유저등록</h2>
-    <form action="/user/login.jsp" method="post">
+    <form action="/user/userInfo.jsp" method="post">
         <input type="text" name="name" placeholder="아이디" required>
         <input type="password" name="password" placeholder="비밀번호" required>
         <input type="text" name="nickname" placeholder="닉네임" required>

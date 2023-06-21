@@ -30,30 +30,30 @@ public class UserDao {
     }
 
 
-    public boolean login(String name, String password) {
-        List<UserDto> users = new ArrayList<UserDto>();
-        Connection conn = new JdbcConnection().getJdbc();
-        String sql = "select id, name, nickname, created_at " +
-                "from users " +
-                "where name = ? and password = ?";
-        try {
-            PreparedStatement pst = conn.prepareStatement(sql);
-            pst.setString(1, name);
-            pst.setString(2, password);
-            ResultSet resultSet = pst.executeQuery();
-            while (resultSet.next()) {
-                users.add(makeUser(resultSet));
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        if (users.size() !=0){
-            me = users.get(0);
-            System.out.println(me);
-            return true;
-        }
-        return false;
-    }
+//    public boolean login(String name, String password) {
+//        List<UserDto> users = new ArrayList<UserDto>();
+//        Connection conn = new JdbcConnection().getJdbc();
+//        String sql = "select id, name, nickname, created_at " +
+//                "from users " +
+//                "where name = ? and password = ?";
+//        try {
+//            PreparedStatement pst = conn.prepareStatement(sql);
+//            pst.setString(1, name);
+//            pst.setString(2, password);
+//            ResultSet resultSet = pst.executeQuery();
+//            while (resultSet.next()) {
+//                users.add(makeUser(resultSet));
+//            }
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//        if (users.size() !=0){
+//            me = users.get(0);
+//            System.out.println(me);
+//            return true;
+//        }
+//        return false;
+//    }
 //
     private UserDto makeUser(ResultSet resultSet) {
             Integer id,money;
