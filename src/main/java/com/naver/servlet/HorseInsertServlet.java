@@ -23,9 +23,13 @@ public class HorseInsertServlet extends HttpServlet {
         float weight = Float.parseFloat(req.getParameter("weight"));
         HorseDao horseDao = new HorseDao();
         HorseInsertDto horseInsertDto = new HorseInsertDto(name, age, height, weight);
-        horseDao.insert(horseInsertDto);
+        boolean success = horseDao.insert(horseInsertDto);
+        if(success) {
+            resp.sendRedirect("/horse/horseMain.jsp");
+        }
+        else{
+            resp.sendRedirect("/horse/insertHorseFail.jsp");
+        }
 
-
-        resp.sendRedirect("/horse/horseMain.jsp");
     }
 }
