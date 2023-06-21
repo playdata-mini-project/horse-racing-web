@@ -10,6 +10,9 @@
 <head>
     <title>유저등록</title>
     <style>
+        body {
+            background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
+        }
         .signup-form {
             width: 400px;
             margin: 0 auto;
@@ -17,6 +20,9 @@
             background-color: #f5f5f5;
             border: 1px solid #ccc;
             border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            height: 30vh; /* 폼 컨테이너의 높이를 조정해주세요. */
         }
 
         .signup-form h2 {
@@ -36,7 +42,7 @@
         .signup-form input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #4caf50;
+            background-color: red;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -44,7 +50,7 @@
         }
 
         .signup-form input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: red;
         }
 
         .signup-form .error-message {

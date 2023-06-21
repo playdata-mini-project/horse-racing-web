@@ -25,6 +25,7 @@
 <html>
 <head>
     <title>코인 충전 완료</title>
+
 </head>
 <body>
 <h1>코인 충전 완료</h1>

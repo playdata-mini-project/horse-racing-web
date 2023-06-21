@@ -4,6 +4,9 @@
 <head>
   <title>코인 충전</title>
   <style>
+    body {
+      background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
+    }
     .coin-form {
       width: 400px;
       margin: 0 auto;
@@ -11,6 +14,9 @@
       background-color: #f5f5f5;
       border: 1px solid #ccc;
       border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      height: 30vh; /* 폼 컨테이너의 높이를 조정해주세요. */
     }
 
     .coin-form h2 {
@@ -20,7 +26,7 @@
 
     .coin-form input[type="text"],
     .coin-form input[type="number"] {
-      width: 100%;
+      width: 90%;
       padding: 10px;
       margin-bottom: 15px;
       border: 1px solid #ccc;
@@ -30,7 +36,7 @@
     .coin-form input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #4caf50;
+      background-color: red;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -38,11 +44,11 @@
     }
 
     .coin-form input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: red;
     }
 
     .coin-form .success-message {
-      color: green;
+      color: red;
       margin-bottom: 10px;
       text-align: center;
     }

@@ -24,7 +24,7 @@
 .signup-form input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
+    background-color: red;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -32,7 +32,7 @@
 }
 
 .signup-form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: red;
 }
 
 .signup-form .error-message {
