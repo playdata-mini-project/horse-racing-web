@@ -14,9 +14,11 @@ import java.util.List;
 public class UserDao {
     public static UserDto me;
     public void insert(UserDto user) {
+        System.out.println("insert");
         Connection conn = new JdbcConnection().getJdbc();
         String sql = "insert into users(name, password, nickname, money) " +
                 "values(?, ?, ? , ?)";
+        System.out.println("insert2");
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
             pst.setString(1, user.getName());
