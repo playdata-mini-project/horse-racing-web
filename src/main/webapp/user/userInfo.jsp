@@ -47,9 +47,9 @@
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
 
 %>
-<div class="user-table"style="font-family: SBAggroB">
+<div class="user-table" style="text-align: center; color: white; font-family: SBAggroB">
     <h3>전체 유저 정보</h3>
-    <table border="1">
+    <table border="3" style="border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto; ">
         <tr>
             <th>ID</th>
             <th>NAME</th>
@@ -79,7 +79,8 @@
     </table>
 </div>
 <%
-        }  // 연결 및 자원 해제
+        }
+        // 연결 및 자원 해제
         resultSet.close();
         statement.close();
         conn.close();
