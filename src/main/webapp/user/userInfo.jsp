@@ -7,6 +7,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/backGround.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
     <title>유저 정보 확인</title>
     <style>
         .user-info-form {
@@ -40,9 +41,9 @@
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
 
 %>
-<div class="user-details">
+<div class="user-table">
     <h3>전체 유저 정보</h3>
-    <table>
+    <table border="1">
         <tr>
             <th>ID</th>
             <th>NAME</th>
@@ -58,9 +59,9 @@
                 String password = resultSet.getString("password");
                 String nickname = resultSet.getString("nickname");
                 int money = Integer.parseInt(resultSet.getString("money"));
-
-                // 추가 필요한 컬럼이 있다면 여기에 추가
         %>
+<%--         추가 필요한 컬럼이 있다면 여기에 추가--%>
+
         <tr>
             <td><%= id %></td>
             <td><%= username %></td>
@@ -69,9 +70,6 @@
             <td><%= money %></td>
             <!-- 추가 필요한 컬럼이 있다면 여기에 추가 -->
         </tr>
-        <%
-            }
-        %>
     </table>
 </div>
 <%
