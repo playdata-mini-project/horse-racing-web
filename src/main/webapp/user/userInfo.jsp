@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="css/backGround.css">
     <title>유저 정보 확인</title>
     <style>
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         .user-info-form {
             width: 400px;
             margin: 0 auto;
@@ -40,7 +46,7 @@
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
 
 %>
-<div class="user-details">
+<div class="user-details" style="font-family: SBAggroB">
     <h3>전체 유저 정보</h3>
     <table>
         <tr>
