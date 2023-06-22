@@ -30,8 +30,9 @@ public class GameServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         out.println("<html>");
-        out.println("<head><title>Race Result</title></head>");
-        out.println("<body>");
+        out.println("<head><title>Race Result</title><link rel='stylesheet' type='text/css' href='/css/game.css'></head>");
+        out.println("<body style='background-color: #232736 !important;'>");
+        out.println("");
         out.println("<h1>Race Result</h1>");
         out.println("<table>");
         out.println("<tr>");
