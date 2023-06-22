@@ -7,7 +7,6 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/backGround.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
     <title>유저 정보 확인</title>
     <style>
         .user-info-form {
@@ -41,9 +40,9 @@
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
 
 %>
-<div class="user-table">
+<div class="user-table" style="text-align: center; color: white">
     <h3>전체 유저 정보</h3>
-    <table border="1">
+    <table border="3" style="border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto; " >
         <tr>
             <th>ID</th>
             <th>NAME</th>
@@ -73,11 +72,11 @@
     </table>
 </div>
 <%
-        // 연결 및 자원 해제
+        }    // 연결 및 자원 해제
         resultSet.close();
         statement.close();
         conn.close();
-    } catch (SQLException e) {
+    }catch (SQLException e) {
         e.printStackTrace();
         // 예외 처리에 따라 적절한 조치를 취하세요.
     }
