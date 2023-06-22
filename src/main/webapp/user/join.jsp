@@ -13,6 +13,13 @@
         body {
             background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
         }
+
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         .signup-form {
             width: 400px;
             margin: 0 auto;
@@ -61,7 +68,7 @@
     </style>
 </head>
 <body>
-<div class="signup-form">
+<div class="signup-form" style="font-family: SBAggroB">
     <h2>유저등록</h2>
     <form action="/join" method="post">
         <input type="text" name="name" placeholder="아이디" required>

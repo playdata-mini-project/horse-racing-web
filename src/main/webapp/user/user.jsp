@@ -10,6 +10,7 @@
         body {
             background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
         }
+
         .button-container {
             width: 400px;
             margin: 0 auto;
@@ -43,6 +44,13 @@
 
         }
 
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         .button-container .button:hover {
             background-color: red;
         }
@@ -50,7 +58,7 @@
 </head>
 <body>
 
-<div class="button-container">
+<div class="button-container" style="font-family: SBAggroB">
     <h2>유저</h2>
     <a href="join.jsp" class="button">유저 등록</a>
     <a href="userInfo.jsp" class="button">유저 조회</a>

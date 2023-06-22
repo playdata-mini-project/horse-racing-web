@@ -19,6 +19,12 @@
             height: 100vh;
         }
 
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         .container {
             background-color: #ffffff;
             border-radius: 5px;
@@ -53,7 +59,7 @@
     </style>
 </head>
 <body>
-<div class="container">
+<div class="container" style="font-family: SBAggroB">
     <h1>유저 등록에 실패했습니다!</h1>
     <p>중복되는 유저명입니다.</p>
     <p><a href="/user/user.jsp">홈으로 돌아가기</a></p>
