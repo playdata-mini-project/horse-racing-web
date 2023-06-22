@@ -1,0 +1,26 @@
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.user-table th {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.user-table tr:hover {
+    background-color: #ffffff;
+}
+
+.user-table td {
+    text-align: center;
+}
