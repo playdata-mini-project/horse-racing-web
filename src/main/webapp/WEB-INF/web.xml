@@ -40,4 +40,5 @@
     <servlet-name>UpdateMoneyServlet</servlet-name>
     <url-pattern>/updateMoney</url-pattern>
   </servlet-mapping>
+
 </web-app>
