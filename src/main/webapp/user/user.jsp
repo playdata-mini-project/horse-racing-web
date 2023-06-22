@@ -2,9 +2,6 @@
 <html>
 
 <head>
-    <title>GIF 이미지 표시</title>
-</head>
-<head>
     <title>유저</title>
     <style>
         body {
@@ -41,7 +38,6 @@
             text-align: center;
             text-decoration: none;
             cursor: pointer;
-
         }
 
         @font-face {
