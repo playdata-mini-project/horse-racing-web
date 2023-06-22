@@ -1,8 +1,8 @@
 package com.naver.Dto;
 
 public class UpdateMoneyDto {
-    private int money;
-    private String name;
+    private final int money;
+    private final String name;
 
     public UpdateMoneyDto(String name, int money) {
         this.name = name;

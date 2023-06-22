@@ -16,12 +16,12 @@ public class JoinServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String name = req.getParameter("name");
         String password = req.getParameter("password");
         String nickname = req.getParameter("nickname");
         UserDao userDao = new UserDao();
-        UserDto userDto = new UserDto(null, name, password, nickname, 0, null);
+        UserDto userDto = new UserDto( name, password, nickname, 0);
         boolean success = userDao.insert(userDto);
 
         if(success) {
