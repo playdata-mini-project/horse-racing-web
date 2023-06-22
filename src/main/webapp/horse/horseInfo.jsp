@@ -16,6 +16,7 @@
 <head>
     <title>경주마 조회</title>
     <style>
+
         body {
             background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
         }
@@ -26,6 +27,12 @@
             background-color: #f5f5f5;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
 
         .user-info-form h2 {
@@ -46,7 +53,7 @@
         ResultSet resultSet = statement.executeQuery("SELECT * FROM horse");
 
 %>
-<div class="user-details" style="text-align: center; color: white">
+<div class="user-details" style="text-align: center; color: white; font-family: SBAggroB">
     <h3>전체 경주마 정보</h3>
     <table border="3" style="border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto; " >
         <tr>

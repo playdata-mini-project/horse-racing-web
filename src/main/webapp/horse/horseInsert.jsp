@@ -49,10 +49,16 @@
             margin-bottom: 10px;
             text-align: center;
         }
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
-<div class="signup-form">
+<div class="signup-form" style="font-family: SBAggroB">
     <h2>경주마 등록</h2>
     <form action="/horseInsert" method="post">
         <input type="text" name="name" placeholder="이름" required>

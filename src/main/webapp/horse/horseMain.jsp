@@ -49,12 +49,18 @@
       margin-top: 20px;
       width: 600px;
     }
+    @font-face {
+      font-family: 'SBAggroB';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>
 <img src="/img/rudak.png">
 
-<div class = "button-container">
+<div class = "button-container" style="font-family: SBAggroB">
   <button type="button" class="button1" onClick="location.href='/horse/horseInsert.jsp'">경주마 등록</button>
   <button type="button" class="button2" onClick="location.href='/horse/horseInfo.jsp'">경주마 조회</button>
   <a href="/" class="button">Home</a>

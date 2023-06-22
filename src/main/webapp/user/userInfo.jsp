@@ -76,10 +76,13 @@
             <td><%= money %></td>
             <!-- 추가 필요한 컬럼이 있다면 여기에 추가 -->
         </tr>
+        <%
+            }
+        %>
     </table>
 </div>
 <%
-        }
+
         // 연결 및 자원 해제
         resultSet.close();
         statement.close();
