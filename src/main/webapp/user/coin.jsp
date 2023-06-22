@@ -7,6 +7,12 @@
     body {
       background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
     }
+    @font-face {
+      font-family: 'SBAggroB';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
     .coin-form {
       width: 400px;
       margin: 0 auto;
@@ -56,7 +62,7 @@
 </head>
 <body>
 
-<form class="coin-form" method="post" action="/updateMoney">
+<form class="coin-form" method="post" action="/updateMoney" style="font-family: SBAggroB">
   <h2>코인 충전</h2>
   <label for="name">이름:</label>
   <input type="text" id="name" name="name" required><br>
