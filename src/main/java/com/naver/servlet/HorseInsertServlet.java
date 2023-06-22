@@ -16,7 +16,7 @@ public class HorseInsertServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String name = req.getParameter("name");
         int age = Integer.parseInt(req.getParameter("age"));
         float height = Float.parseFloat(req.getParameter("height"));
