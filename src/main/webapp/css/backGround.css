@@ -1,0 +1,15 @@
+body {
+    background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
+}
+
+element.style {
+    font-size: 14px;
+    width: 100%;
+    background: #161823;
+    color: #fff;
+    border: none;
+    margin-bottom: 0px;
+    padding: 0.2rem 0.75rem;
+    border-radius: 0px;
+    text-align: center;
+}

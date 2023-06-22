@@ -16,6 +16,9 @@
 <head>
     <title>경주마 조회</title>
     <style>
+        body {
+            background-color: #232736 !important; /* 우선순위를 높이기 위한 구체적인 선택자 */
+        }
         .user-info-form {
             width: 400px;
             margin: 0 auto;
