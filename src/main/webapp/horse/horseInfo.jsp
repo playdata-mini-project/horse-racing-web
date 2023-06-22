@@ -46,9 +46,9 @@
         ResultSet resultSet = statement.executeQuery("SELECT * FROM horse");
 
 %>
-<div class="user-details" style="text-align: center; color: white">
+<div class="user-details">
     <h3>전체 경주마 정보</h3>
-    <table border="3" style="border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto; " >
+    <table>
         <tr>
             <th>ID</th>
             <th>NAME</th>

@@ -117,7 +117,7 @@
                         <a class="nav-link" id="profile-tab" href="/horse/horseMain.jsp">말</a>
                     </li>
                     <li class="nav-item nav_category_top" role="presentation">
-                        <a class="nav-link" id="profile-tab2" href="/user/game.jsp">게임</a>
+                        <a class="nav-link" id="profile-tab2" href="game.jsp">게임</a>
                     </li>
                 </ul>
             </div>
