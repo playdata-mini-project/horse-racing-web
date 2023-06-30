@@ -33,8 +33,8 @@ public class GameServlet extends HttpServlet {
         out.println("<head><title>Race Result</title><link rel='stylesheet' type='text/css' href='/css/game.css'></head>");
         out.println("<body style='background-color: #232736 !important;'>");
         out.println("");
-        out.println("<h1>Race Result</h1>");
-        out.println("<table>");
+        out.println("<h1 style=\"text-align: center; color: white; font-family: SBAggroB\">경마 게임</h1>");
+        out.println("<table border=\"3\" style=\"border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto; \" >");
         out.println("<tr>");
         out.println("<th>말 이름</th>");
         out.println("<th>유저</th>");
@@ -51,9 +51,10 @@ public class GameServlet extends HttpServlet {
 
         Horse winningHorse = game.getWinningHorse();
         if (winningHorse != null) {
-            out.println("<h2>우승 말</h2>");
-            out.println("<p>말 이름: " + winningHorse.getName() + "</p>");
-            out.println("<p>유저: " + winningHorse.getUser() + "</p>");
+            out.println("<h2 style=\"text-align: center; color: white; font-family: SBAggroB\">축 !  우승 !</h2>");
+            out.println("<table border=\"3\" style=\"border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto; \" >");
+            out.println("<p border=\"3\" style=\"border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto;  \">말 이름: " + winningHorse.getName() + "</p>");
+            out.println("<p border=\"3\" style=\"border: #161823; background-color: #161823; color: white; margin-left: auto; margin-right: auto;  \">유저: " + winningHorse.getUser() + "</p>");
         }
 
         out.println("</body>");
